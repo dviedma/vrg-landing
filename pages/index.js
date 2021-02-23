@@ -45,7 +45,7 @@ const Home = () => {
         <div className="row justify-content-center mt-3">
         
           <div id="mc_embed_signup input-group">
-          <h3 >Don't miss the latest updates!</h3>
+           <h3 >Don't miss the latest updates!</h3>
           <input style={{borderRadius:'0', backgroundClip:'none'}} className="form-control" type="email" value="" name="EMAIL" id="mce-EMAIL"/>
           <input style={{width:'100px', display:"block", margin:'auto'}} type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="btn mt-3"/>
           </div>
