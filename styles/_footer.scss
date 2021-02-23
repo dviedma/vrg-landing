@@ -5,6 +5,10 @@ footer {
   border-image-source: linear-gradient(to left, $base2, $accent3);
   margin-top: 100px;
 
+  ul {
+    padding: 0;
+  }
+
   li {
     list-style: none;
   }

@@ -25,31 +25,7 @@ const Nav = () => {
       <Link href="/">
         <a style={{textDecoration:'none'}}><h2 className="logo" style={{paddingTop:'3px',fontSize:'1.5rem',marginBottom:'0'}}>VRG</h2></a>
       </Link>
-      <ul className="navbar-nav ml-auto d-sm-flex">
-        {!user.loggedIn?
-          <Fragment>
-            <li className="nav-item ml-3">
-            <Link href="/register">
-                <a>Register</a>
-              </Link>
-            </li>
-            <li className="nav-item ml-3"> 
-              <Link href="/login">
-                <a> Login</a>
-              </Link>
-            </li>
-          </Fragment>
-        :
-          <Fragment>
-            <li className="nav-item ml-3 nav-item__user">
-              Hello, <a href="/profile">{user.currentUser.displayName}</a>
-            </li>
-            <li className="nav-item ml-3">
-              <button onClick={handleLogout} className="btn">Logout</button>
-            </li>
-          </Fragment>
-        }
-      </ul>
+
     </nav>
   );
 }

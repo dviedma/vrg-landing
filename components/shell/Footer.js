@@ -9,20 +9,14 @@ const Footer = () => {
       <div className="row justify-content-sm-center">
         <div className="col-sm-3">
           <ul>
-            <li><Link href="/about"><a>About Us</a></Link></li>
-            <li><Link href="/contact"><a>Contact</a></Link></li>
+            <li className="text-center"><Link href="/about"><a>About Us</a></Link></li>
+            <li className="text-center"><Link href="/contact"><a>Contact</a></Link></li>
           </ul>          
-        </div>
+        </div>    
         <div className="col-sm-3">
           <ul>
-            <li><Link href="/terms"><a>Terms and Conditions</a></Link></li>
-            <li><Link href="/privacty"><a>Privacy Policy</a></Link></li>
-          </ul>          
-        </div>      
-        <div className="col-sm-3">
-          <ul>
-            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li className="text-center"><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li className="text-center"><a href="https://facebook.com" target="_blank">Facebook</a></li>
           </ul>
         </div>  
       </div>

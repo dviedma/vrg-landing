@@ -32,20 +32,26 @@ const Home = () => {
   return (
     <div className="index container-fluid mt-3">
       <Head>
-        <title>VRG 2</title>
+        <title>VRG</title>
       </Head>
       
-      <h2>Channels</h2>
+      <div className="container-fluid pt-5 pb-2">
+        <div className="row justify-content-sm-center">
+            <img src="/images/logo.png" style={{maxWidth:'100%'}}/>             
+        </div>
+        <div className="row justify-content-center mt-3">
+          <h2>The Future of Hobby, Coming Soon</h2>          
+        </div>
+        <div className="row justify-content-center mt-3">
+        
+          <div id="mc_embed_signup input-group">
+          <h3 >Don't miss the latest updates!</h3>
+          <input style={{borderRadius:'0', backgroundClip:'none'}} className="form-control" type="email" value="" name="EMAIL" id="mce-EMAIL"/>
+          <input style={{width:'100px', display:"block", margin:'auto'}} type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="btn mt-3"/>
+          </div>
+        </div>
+      </div>
 
-      <ul>
-        {users.map(user =>
-          <li key={user.userName}>
-            <Link href="/user/[userName]" as={'/user/' + user.userName }>
-              <a itemProp="hello">{user.userName}</a>
-            </Link>
-          </li>
-        )}
-      </ul>
     </div>
   )
 }
