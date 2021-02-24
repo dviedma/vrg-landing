@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-import Link from 'next/link';
 import Head from 'next/head';
 
 import fire from '../config/fire-config';
-import CreatePost from '../components/CreatePost';
+
+import Mailchimp from 'react-mailchimp-form';
 
 
 const Home = () => {
@@ -45,9 +45,31 @@ const Home = () => {
         <div className="row justify-content-center mt-3">
         
           <div id="mc_embed_signup input-group">
-           <h3 >Don't miss the latest updates!</h3>
-          <input style={{borderRadius:'0', backgroundClip:'none'}} className="form-control" type="email" value="" name="EMAIL" id="mce-EMAIL"/>
-          <input style={{width:'100px', display:"block", margin:'auto'}} type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="btn mt-3"/>
+          <h3 >Don't miss the latest updates!</h3>
+          <Mailchimp
+            action='https://live.us1.list-manage.com/subscribe/post?u=7ec1df689d77dcdd641f57998&amp;id=9cba6535e6'
+            
+            fields={[
+              {
+                name: 'EMAIL',
+                placeholder: 'Email',
+                type: 'email',
+                required: true
+              }
+            ]}
+
+            messages = {
+              {
+                sending: "Sending...",
+                success: "Thank you for subscribing!",
+                error: "An unexpected internal error has occurred.",
+                empty: "You must write an e-mail.",
+                duplicate: "Too many subscribe attempts for this email address",
+                button: "Subscribe"
+              }
+            }
+
+          />
           </div>
         </div>
       </div>
