@@ -29,10 +29,15 @@ a {
 }
 
 ////
+.wrapper-form {
+  width: 50%;
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
 
 input[type="email"] {
-  display: block;
-    width: 100%;
+    width: calc(100% - 60px);
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -48,17 +53,23 @@ input[type="email"] {
 
 button {
   border-radius: 0;
-  background-color: #7beeff;
-  font-family: Teko,sans-serif;
+  background-color: #007ee8;
+  font-family: Teko, sans-serif;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
   padding-top: 8px;
   padding-bottom: 4px;
   border: none;
-  padding: 10px 10px 6px;
-  display: block;
+  /* padding: 10px 10px 6px; */
+  /* display: block; */
   margin: 20px auto;
-  font-size: 16px;
+  font-size: 18px;
+  color: white;
+  margin-top: 21p;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 50%);
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translateY(2px);
 
   &:focus {
     color: #495057;

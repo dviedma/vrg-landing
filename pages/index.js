@@ -37,22 +37,17 @@ const Home = () => {
       
       <div className="container-fluid pt-5 pb-2">
         <div className="row justify-content-sm-center">
-            <img src="/images/logo.png" style={{maxWidth:'100%'}}/>             
+            <img src="/images/landing.gif" style={{maxWidth:'100%'}}/>             
         </div>
-        <div className="row justify-content-center mt-3">
-          <h2>The Future of Hobby, Coming Soon</h2>          
-        </div>
-        <div className="row justify-content-center mt-3">
-        
-          <div id="mc_embed_signup input-group">
-          <h3 >Don't miss the latest updates!</h3>
+        <div className="row justify-content-center mt-3">        
+          <div id="mc_embed_signup input-group" className="wrapper-form">
           <Mailchimp
             action='https://live.us1.list-manage.com/subscribe/post?u=7ec1df689d77dcdd641f57998&amp;id=9cba6535e6'
             
             fields={[
               {
                 name: 'EMAIL',
-                placeholder: 'Email',
+                placeholder: 'enter your email',
                 type: 'email',
                 required: true
               }
@@ -65,12 +60,15 @@ const Home = () => {
                 error: "An unexpected internal error has occurred.",
                 empty: "You must write an e-mail.",
                 duplicate: "Too many subscribe attempts for this email address",
-                button: "Subscribe"
+                button: "Go!"
               }
             }
 
           />
           </div>
+        </div>
+        <div className="row justify-content-center mt-3">
+          <h2>Be the first to know!</h2>          
         </div>
       </div>
 
