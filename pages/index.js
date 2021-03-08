@@ -36,7 +36,7 @@ const Home = () => {
       </Head>
       
       <div className="container-fluid pt-5 pb-2">
-        <div className="row justify-content-sm-center">
+        <div className="row justify-content-sm-center logo-home">
             <img src="/images/landing.gif" style={{maxWidth:'100%'}}/>             
         </div>
         <div className="row justify-content-center mt-3">        
