@@ -1,5 +1,12 @@
-form {
+form,
+.input-group {
   width: 100%;
+  & > div {
+    width: 100%;
+    & > div {
+      color: #fff931!important;
+    }
+  }
   input,
   select {
     border-radius: 0!important;

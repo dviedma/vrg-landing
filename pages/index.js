@@ -5,7 +5,8 @@ import Head from 'next/head';
 
 import fire from '../config/fire-config';
 
-import Mailchimp from 'react-mailchimp-form';
+//import Mailchimp from 'react-mailchimp-form';
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 
 const Home = () => {
@@ -15,22 +16,22 @@ const Home = () => {
   const [loggedIn, setLoggedIn] = useState(false);
 
   const user = useSelector ((state) => state.user);
+  const url = "https://live.us1.list-manage.com/subscribe/post?u=7ec1df689d77dcdd641f57998&amp;id=9cba6535e6";
+
 
   useEffect(() => {
-    /*
+
     setTimeout(()=>{
-      document.querySelector("form input").addEventListener("keyup", function(event) {
-        console.log("hola");
+      document.querySelector("#mc_embed_signup input").addEventListener("keyup", function(event) {
         // Number 13 is the "Enter" key on the keyboard
         if (event.keyCode === 13) {
           // Cancel the default action, if needed
           event.preventDefault();
           // Trigger the button element with a click
-          alert(0);
+          document.querySelector("#mc_embed_signup button").click();
         }
       });
     },2000)
-    */
 
 
     // Get list of users
@@ -60,7 +61,11 @@ const Home = () => {
         </div>
         <div className="row justify-content-center mt-3">        
           <div id="mc_embed_signup" className="wrapper-form input-group">
-          <Mailchimp
+
+          <MailchimpSubscribe url={url}/>
+
+          {/**
+           * <Mailchimp
             action='https://live.us1.list-manage.com/subscribe/post?u=7ec1df689d77dcdd641f57998&amp;id=9cba6535e6'
             
             fields={[
@@ -84,6 +89,8 @@ const Home = () => {
             }
 
           />
+           */}  
+          
           </div>
         </div>
         <div className="row justify-content-center">
