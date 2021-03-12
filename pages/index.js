@@ -57,7 +57,7 @@ const Home = () => {
             <img src="/images/landing2.gif" style={{maxWidth:'700px'}}/>     
         </div>
         <div className="row justify-content-sm-center logo-home mt-3">
-          <h2 style={{margin:'auto'}}>WIN WATCH BUY SELL TRADE</h2>        
+          <h2 style={{margin:'auto'}}>WIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WATCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRADE</h2>        
         </div>
         <div className="row justify-content-center mt-3">        
           <div id="mc_embed_signup" className="wrapper-form input-group">
@@ -93,9 +93,7 @@ const Home = () => {
           
           </div>
         </div>
-        <div className="row justify-content-center">
-          <h2>Be the first to know!</h2>          
-        </div>
+
       </div>
 
     </div>
