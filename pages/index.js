@@ -63,7 +63,7 @@ const Home = () => {
           <div id="mc_embed_signup" className="wrapper-form input-group">
 
           <div className="justify-content-sm-center logo-home mt-3 mb-3">
-            <h3 style={{margin:'auto'}}>Welcome to the VRG Community! We are the future home of Sports Card Breaks, Rip & Ships, content, and more. Our goal is to build a fun, safe, and trusted community for the hobby we all love.</h3>        
+            <h3 style={{margin:'auto'}}>Welcome to the VRG Community! The future home of card breaks, rip & ships, hobby content, and more. We are building a fun, safe, and trusted community for the hobby we all love. Sign up below to get the latest updates!</h3>        
           </div>                      
 
           <MailchimpSubscribe url={url}/>
