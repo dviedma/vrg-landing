@@ -16,8 +16,13 @@
 // Greg's experiments
 
 body {
-  background: url(/images/bg2.gif);
+  background: linear-gradient(to bottom, #30c9cdff, #330d69ff);
+  height: 100%;
 }
+#__next {
+  background: url(/images/bg.png);
+}
+
 nav {
   background: none!important;
 }
