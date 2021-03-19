@@ -53,8 +53,8 @@ const Home = () => {
       </Head>
       
       <div className="container-fluid pt-5 pb-2">
-        <div className="row justify-content-sm-center logo-home">
-            <img src="/images/landing2.gif" style={{maxWidth:'550px', margin:'auto'}}/>     
+        <div className="justify-content-sm-center logo-home" style={{textAlign:'center'}}>
+            <img src="/images/landing2.gif" style={{maxWidth:'550px', width:'100%', margin:'auto'}}/>     
         </div>
         <div className="row justify-content-sm-center logo-home mt-3">
           <h2 style={{margin:'auto'}}>WIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WATCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRADE</h2>        

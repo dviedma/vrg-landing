@@ -14,7 +14,9 @@
 @import "./pages/index";
 
 // Greg's experiments
-
+html {
+  background: #171717;
+}
 body {
   background: linear-gradient(to bottom, #30c9cdff, #330d69ff);
   height: 100%;
