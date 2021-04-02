@@ -6,7 +6,7 @@ import Head from 'next/head';
 import fire from '../config/fire-config';
 
 //import Mailchimp from 'react-mailchimp-form';
-import MailchimpSubscribe from "react-mailchimp-subscribe"
+import MailchimpSubscribe from '../components/MailChimpSubscribe'
 
 
 const Home = () => {
